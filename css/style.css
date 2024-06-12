@@ -1,0 +1,280 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+:root {
+    --sgap: 24px;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: local('Inter-Regular'),
+        url('../fonts/Inter-Regular.woff2') format('woff2'),
+        url('../fonts/Inter-Regular.woff') format('woff');
+    font-display: swap;
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: local('Inter-Semibold'),
+        url('../fonts/Inter-SemiBold.woff2') format('woff2'),
+        url('../fonts/Inter-SemiBold.woff') format('woff');
+    font-display: swap;
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Mulish';
+    src: local('Mulish-SemiBold'),
+        url('../fonts/Mulish-SemiBold.woff2') format('woff2'),
+        url('../fonts/Mulish-SemiBold.woff') format('woff');
+    font-display: swap;
+    font-weight: 600;
+    font-style: normal;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+li {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 640px;
+}
+
+/* header */
+
+.header {
+    padding: 32px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+}
+
+/* hero */
+
+.hero {
+    padding: 40px 0;
+    background-color: rgb(238, 240, 242);
+}
+
+.hero > .container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.hero__form {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.hero__form-input {
+    padding: 15px 20px;
+    background-color: #fff;
+    border: 1px solid rgb(192, 192, 192);
+    border-radius: 8px;
+}
+
+.hero__title {
+    margin: 0;
+    margin-bottom: var(--sgap);
+    text-align: center;
+}
+
+.hero__descr {
+    margin: 0;
+    text-align: center;
+    margin-bottom: var(--sgap);
+}
+
+.hero__img {
+    border-radius: 8px;
+    margin-bottom: var(--sgap);
+}
+
+.hero__text {
+    margin-bottom: var(--sgap);
+    text-align: center;
+}
+
+.hero__form-btn {
+    padding: 12px 24px;
+    background-color: #1D4ED8;
+    border: none;
+    outline: none;
+    color: #fff;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color .3s ease-in-out;
+}
+
+.hero__form-btn svg {
+    width: 14px;
+    height: 14px;
+}
+
+.hero__form-btn:hover {
+    background-color: #2259f1;
+}
+
+.hero__form-btn:focus {
+    background-color: #1d4ac7;
+}
+
+.hero__form-btn:active {
+    background-color: #1d4ac7;
+}
+
+/* product */
+
+.product {
+    padding: 32px 0;
+}
+
+.product__title {
+    margin: 0;
+    margin-bottom: 32px;
+    text-align: center;
+}
+
+.product__list {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.product__item {
+    flex-basis: 314px;
+    height: 340px;
+    border-radius: 8px;
+    border: 1px solid rgb(216, 216, 216);
+}
+
+.product__item-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 16px;
+    height: 181px;
+}
+
+.product__item-bg {
+    min-height: 159px;
+    border-radius: 8px 8px 0 0;
+}
+
+.yellow {
+    background-color: #FFC800;
+}
+
+.lightblue {
+    background-color: #2E68C0;
+}
+
+.red {
+    background-color: #EA1542;
+}
+
+.blue {
+    background-color: #1D4ED8;
+}
+
+.product__item-title {
+    margin: 0;
+    margin-bottom: 8px;
+}
+
+.product__item-descr {
+    margin: 0;
+    margin-bottom: auto;
+}
+
+.product__item-link {
+    display: flex;
+    align-items: center;
+    color: #3366FF;
+}
+
+.product__item-link:hover {
+    color: #2B57D9
+}
+
+.product__item-link svg {
+    margin-left: 5px;
+    transition: margin-left .3s ease-in-out;
+}
+
+.product__item-link:hover svg {
+    margin-left: 13px;
+}
+
+/* footer */
+
+.footer__icon-list {
+    padding: 0;
+    margin: 0;
+    margin-bottom: var(--sgap);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+}
+
+.footer__link-list {
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+}
+
+.footer__link-item {
+    color: rgb(51, 102, 255);
+    transition: color .3s ease-in-out;
+}
+
+.footer__link-item:hover {
+    color: rgb(64, 89, 165);
+}
+
+.footer__link-item:focus {
+    color: rgb(39, 80, 202);
+}
+
+.footer__link-item:active {
+    color: rgb(32, 61, 148);
+}
+
+.footer__descr {
+    margin: 0;
+    margin-bottom: 32px;
+    text-align: center;
+}
