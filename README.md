@@ -20,8 +20,15 @@ Muse-Group/
 │ ├── normalize.css
 │ ├── styles.css
 │ └── media.css
+├── fonts/
+│ ├── Inter-Regular.woff
+│ ├── Inter-Regular.woff2
+│ ├── Inter-SemiBold.woff
+│ ├── Inter-SemiBold.woff2
+│ ├── Mulish-SemiBold.woff
+│ ├── Mulish-SemiBold.woff2
 ├── js/
-│ └── validation.js
+│ └── main.js
 ├── index.html
 └── README.md
 ```
