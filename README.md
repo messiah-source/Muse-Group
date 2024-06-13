@@ -10,7 +10,7 @@ This repository contains a simple single-page website created as part of a test 
 - **Normalize.css:** The project includes Normalize.css to provide consistent styling across different browsers.
 - **Flexbox Layout:** All elements are positioned using Flexbox for a responsive and flexible layout.
 - **Interactive Elements:** Buttons and links feature `hover`, `focus`, and `active` states for better user interaction.
-- **Input Validation:** A JavaScript file handles the validation of an email input field using regular expressions.
+- **Input Validation:** A JavaScript file handles the validation of an email input field using regular expressions (***@.com/***@.ru allowed).
 - **Responsive Design:** Media queries are used to ensure the website is responsive and adapts to different screen sizes.
 
 ## Folder Structure
